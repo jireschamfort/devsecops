@@ -23,6 +23,7 @@ pipeline {
               //sh "kubectl get node -o wide"
               //archive 'target/*.jar' //so that they can be downloaded later
             }
+            }
         }
     
     
