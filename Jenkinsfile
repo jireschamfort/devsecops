@@ -14,7 +14,7 @@ pipeline {
               //archive 'target/*.jar' //so that they can be downloaded later
             }
         }   
-       } 
+        
     stage('kubernetes Version') {
             steps {
               withKubeConfig([credentialsId: 'kubernetes'          
