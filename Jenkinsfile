@@ -17,7 +17,8 @@ pipeline {
        
         stage('kubernetes Version') {
             steps {
-              withKubeConfig([credentialsId: 'kubernetes'          
+              withKubeConfig([credentialsId: 'kubernetes' 
+                              serverUrl: '192.168.10.52',
                     ]) {
                 sh 'kubectl get pods'
               //sh "kubectl get node -o wide"
